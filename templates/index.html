@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}"> -->
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #287050;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="{{ url_for('static',filename='Logo.png')}}" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+              <b> Klasifikasi Tanah</b>
+            </a>
+          </div>
+          <div class="menuu">
+            <ul>
+              <li><a class="menu" href="index.html">Home</a></li>
+              <li><a class="menu" href="penjelasan.html">Penjelasan</a></li>
+              <li><a class="menu" href="Hitung.html">Implementasi</a></li>
+              <li><a class="menu" href="https://github.com/wahyuarilsaputra/klasifikasi_tanah">Github</a></li>
+            </ul>
+          </div>
+      </nav>
+    <header class="bg-dark py-5">
+      <div class="container px-5">
+        <br><br>
+          <div class="row gx-5 align-items-center justify-content-center">
+              <div class="col-lg-8 col-xl-7 col-xxl-6">
+                  <div class="my-5 text-center text-xl-start">
+                      <h1 class="display-5 fw-bolder text-white mb-2">TANAHKU SUBUR</h1>
+                      <p class="lead fw-normal text-white-50 mb-4">Sebuah Sistem yang dapat melakukan klasifikasi jenis tanah yang cocok untuk ditanami dalam bidang pertanian</p>
+                      <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                          <a class="btn btn-primary btn-lg px-4 me-sm-3" href="Hitung.html">Mulai</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{ url_for('static',filename='tanah.jpg')}}" alt="..." /></div>
+          </div>
+      </div>
+      <br><br><br><br><br><br>
+  </header>
+  <div class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                    <div class="fs-4 mb-4 fst-italic">"Semangat"</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                        <div class="fw-bold">
+                            Wahyu Aril Saputra
+                            <span class="fw-bold text-primary mx-1">/</span>
+                            200411100055
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <section class="py-5">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="text-center">
+                    <h2 class="fw-bolder">METODE YANG DIGUNAKAN</h2>
+                    <p class="lead fw-normal text-muted mb-5">Dalam Sistem Klasifikasi ini menggunakan tiga jenis metode algortima machine learning yaitu</p>
+                </div>
+            </div>
+        </div>
+        <section class="section-top-padding background-white list-group-horizontal">
+          <div class="contain">
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html">
+                      <img src="../static/bayes.png">
+                  </a>
+                </div>
+                <div class="contentBx">
+                  <h3 style="color: #287050;">METODE</h3>
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html">Naive Bayes</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">
+                    <img src="../static/forest.png">
+                  </a>
+                </div>
+                <div class="contentBx">
+                  <h3 style="color: #287050;">METODE</h3>
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">Random Forest</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html">
+                    <img src="../static/tree.png">
+                  </a>
+                </div>
+                <div class="contentBx">
+                  <h3 style="color: #287050;">METODE</h3>
+                  <a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html">Decision Tree</a>
+                </div>
+              </div>
+            </div>
+    <!-- Footer-->
+   <footer class="blue darken-2 white-text center ">
+    <br><br><br>
+    <p><center>Wahyu Aril Saputra 200411100055</center></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Hasil</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #287050;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="../static/Logo.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+              <b> Klasifikasi Tanah</b>
+          </a>
+        </div>
+        <div class="menuu">
+          <ul>
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu" href="penjelasan.html">Penjelasan</a></li>
+            <li><a class="menu" href="Hitung.html">Implementasi</a></li>
+            <li><a class="menu" href="https://github.com/wahyuarilsaputra/klasifikasi_tanah">Github</a></li>
+          </ul>
+  </div>
+    </nav>
+    <br>
+    <h1><center>HASIL {{metode}}</center></h1>
+    <section class="section-top-padding background-white list-group-horizontal">
+        <div class="contain">
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <h2>Tanah cocok ditanami</h2>
+              </div>
+              <div class="contentBx">
+                <h3 style="color: #287050;">{{ hasil }}</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <h3> Akurasi dari Metode Naive Bayes</h3>
+              </div>
+              <div class="contentBx">
+                <h3 style="color: #287050;">{{ acc }} %</h3>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>

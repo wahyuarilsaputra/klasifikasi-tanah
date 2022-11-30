@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Form</title>
+</head>
+<body>
+        <nav class="navbar" style="background-color: #287050;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                      <img src="../static/Logo.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                      <b> Klasifikasi Tanah</b>
+                  </a>
+                </div>
+                <div class="menuu">
+                        <ul>
+                          <li><a class="menu" href="index.html">Home</a></li>
+                          <li><a class="menu" href="penjelasan.html">Penjelasan</a></li>
+                          <li><a class="menu" href="Hitung.html">Implementasi</a></li>
+                          <li><a class="menu" href="https://github.com/wahyuarilsaputra/klasifikasi_tanah">Github</a></li>
+                        </ul>
+                </div>
+                </nav>
+        </nav>
+    <div class="container">
+        <!-- <div class="card"> -->
+        <!-- <div class="container-fluid px-1 py-5 mx-auto"> -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-11">
+                        <h3 class="text-center mt-3 mb-5">MASUKAN DATA DISINI</h3>
+                        <div class="card p-5 mb-5">
+                                <form method="POST" action="/Hasil.html" enctype = "multipart/form-data">
+                                        <div class="row g-3">                        
+                                                <div class="col-md-6">
+                                                        <label for="Nitrogen" class="form-label">Nitrogen</label>
+                                                        <input type="text" class="form-control" id="Nitrogen" name="Nitrogen" placeholder="Nitrogen" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <label for="Phosphorous" class="form-label">Phosphorous</label>
+                                                        <input type="text" class="form-control" id="Phosphorous" name="Phosphorous" placeholder="Phosphorous">
+                                                </div>
+                                        </div>
+                                        <br>
+                                        <div class="mb-3">
+                                                <label for="Potassium" class="form-label" style="text-align: left;">Potassium</label>
+                                                <input type="text" class="form-control" id="Potassium" name="Potassium" placeholder="Potassium">
+                                        </div>
+                                        <div class="row g-3">
+                                                <div class="col-md-6">
+                                                        <label for="Temperature" class="form-label">Temperature</label>
+                                                        <input type="text" class="form-control" id="Temperature" name="Temperature" placeholder="Temperature">
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <label for="Humidity" class="form-label">Humidity</label>
+                                                        <input type="number" class="form-control" id="Humidity" name="Humidity" placeholder="Humidity" min="0" max="100">
+                                                </div>
+                                        </div>
+                                        <br>
+                                        <div class="mb-3">
+                                                <label for="Ph" class="form-label">Ph</label>
+                                                <input type="number" class="form-control" id="Ph" name="Ph" placeholder="Ph" min="0" max="14">
+                                        </div>
+                                        <div class="mb-3">
+                                                <label for="Rainfall" class="form-label">Rainfall</label>
+                                                <input type="text" class="form-control" id="Rainfall" name="Rainfall" placeholder="Rainfall">
+                                        </div>
+                                        <label for="Rainfall" class="form-label">Metode yang digunakan</label>
+                                        <select class="form-select" aria-label="Default select example" name="metode">
+                                                <option selected disabled>Pilih Metode</option>
+                                                <option value="bayes">Naive Bayes</option>
+                                                <option value="forest">Random Forest</option>
+                                                <option value="tree">Decision Tree</option>
+                                        </select>
+                                        <br>
+                                        <button type="submit" class="btn btn-primary" name="tambah">Hitung</button>
+                                        <button type="reset" class="btn btn-primary" name="hapus">Hapus</button>
+                                </form>
+                        </div>
+                        <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

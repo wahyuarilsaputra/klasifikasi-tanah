@@ -1,0 +1,111 @@
+body{
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+img{
+    margin-left: 10px;
+}
+b{
+    color: white;
+}
+.contain {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.contain .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.contain .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.contain .card:hover .content {
+    transform: translateY(-20px);
+}
+
+.contain .card .content .imgBx {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    margin-left: -20px;
+}
+
+.contain .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0px;
+}
+
+.contentBx a{
+    color: #287050;
+}
+.contain .card .content .contentBx h3 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.menuu{
+    margin: 0 1rem;
+}
+
+.menuu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 800px;
+    margin-top: -30px;
+    list-style: none;
+}
+.menuu .menu{
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menuu .menu:hover {
+    border-radius: 1rem;
+    background-color: white;
+    color: #287050;
+}
+
+.table{
+    margin-left: 300px;
+}
